@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>DPS909 - Lab 11</title>
+</head>
+
+<body>
+  <h1 id='text'>This is Snow, the Lord Commander of the Room's Watch</h1>
+  <img id='img'></img>
+  <button id='button' onclick="loadImage()">Click me!</button>
+  <script>
+    var counter = 0;
+	
+    var img = document.querySelector('#img');
+    var title = document.querySelector('#text');
+    var btn = document.querySelector('#button');
+	
+    img.onload = function loaded(){
+      counter++;
+      if (counter <= 1){
+        document.body.style.backgroundColor = "lightgreen";
+      }
+      else {
+        text.innerHTML = 'onLoad has happened multiple times';
+        document.body.style.backgroundColor = "lightred";
+      }
+    }
+
+    img.src = 'img.png';
+	
+    function loadImage(){
+      img.src = 'img.png';
+    }
+  </script>
+</body>
+</html>
