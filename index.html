@@ -8,7 +8,9 @@
 <body>
   <h1 id='text'>This is Snow, the Lord Commander of the Room's Watch</h1>
   <img id='img'></img>
-  <button id='button' onclick="loadImage()">Click me!</button>
+  <p>
+	<button id='button' onclick="loadImage()">Click me!</button>
+  </p>
   <script>
     var counter = 0;
 	
@@ -23,7 +25,7 @@
       }
       else {
         text.innerHTML = 'onLoad has happened multiple times';
-        document.body.style.backgroundColor = "lightred";
+        document.body.style.backgroundColor = "red";
       }
     }
 
